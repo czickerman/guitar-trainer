@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import Fretboard from "./components/Fretboard";
 import { notes } from "./lib/noteManager";
 import { AppContext } from "./lib/AppContext";
