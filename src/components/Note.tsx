@@ -13,7 +13,7 @@ export default function Note({ note, lastNote, inlayed }: NoteProps) {
   const { state, setState } = useContext(AppContext)!;
 
   const handleClick = () => {
-    if (!state.selectedNote) {
+    if (state.selectedNote === undefined) {
       setSelected(true);
       setState({ ...state, selectedNote: note });
 
