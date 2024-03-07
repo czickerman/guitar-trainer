@@ -1,6 +1,6 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { notes, nextNote } from "../lib/noteManager";
-import { AppContext } from "@/lib/AppContext";
+import { useAppContext } from "@/lib/AppContext";
 
 interface NoteProps {
   lastNote: boolean;
@@ -10,7 +10,7 @@ interface NoteProps {
 
 export default function Note({ note, lastNote, inlayed }: NoteProps) {
   const [selected, setSelected] = useState(false);
-  const { state, setState } = useContext(AppContext)!;
+  const { state, setState } = useAppContext();
 
   const handleClick = () => {
     if (state.selectedNote === undefined) {

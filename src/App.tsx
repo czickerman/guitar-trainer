@@ -1,10 +1,9 @@
-import { useContext } from "react";
 import Fretboard from "./components/Fretboard";
 import { notes } from "./lib/noteManager";
-import { AppContext } from "./lib/AppContext";
+import { useAppContext } from "./lib/AppContext";
 
 function App() {
-  const { state } = useContext(AppContext)!;
+  const { state } = useAppContext();
 
   return (
     <div className="h-screen flex flex-col justify-center items-center">

@@ -7,3 +7,6 @@ export const nextNote = () => {
   unusedNotes = unusedNotes.length !== 1 ? unusedNotes.filter((n) => n !== note) : [...notes];
   return notes.indexOf(note);
 };
+
+export const generateStrings = (stringsData: number[], frets: number) =>
+  stringsData.map((s) => [...Array(frets)].map((_f, i) => (i + s) % notes.length));
