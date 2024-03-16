@@ -8,6 +8,9 @@ module.exports = {
         18: "4.5rem",
       },
     },
+    fontFamily: {
+      genos: ["Genos", "sans-serif"],
+    },
   },
   prefix: "",
   plugins: [],
