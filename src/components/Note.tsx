@@ -30,7 +30,7 @@ export default function Note({ note, lastNote, inlayed }: NoteProps) {
 
   return (
     <div
-      className={`h-8 w-18 flex justify-center items-center relative border-r-[#565258]/50 ${!lastNote ? "border-r-2 " : ""}`}
+      className={`h-7 w-18 flex justify-center items-center relative border-r-[#565258]/50 ${!lastNote ? "border-r-2 " : ""}`}
     >
       <div
         className={`absolute border-t-[1px] z-10 border-t-[#D0CDCC] top-[50%] left-[0px] ${!lastNote ? "w-full-2px" : "w-full"}`}
